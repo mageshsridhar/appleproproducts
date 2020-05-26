@@ -1,0 +1,512 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  font-weight: 400;
+  src: local("SF Pro Text");
+}
+html {
+  font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+}
+/* ----------------- First Page ---------------- */
+.firstpage {
+  height: 100vh;
+  transition: all 0.5s ease;
+}
+.pagewrapper {
+  height: 100vh;
+  width: 85%;
+  margin: auto;
+}
+.nav {
+  width: 100%;
+  height: 100px;
+  position: relative;
+}
+.navright {
+  display: flex;
+  margin: 0px;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-100%, -50%);
+}
+.navright > a {
+  margin-left: 40px;
+  vertical-align: middle;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+.navright > a > img {
+  margin-top: -3px;
+}
+
+.applelogo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.firstcontent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.firstcontent h1 {
+  font-size: 70px;
+  font-weight: 600;
+}
+.secondcontent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.secondcontent h1 {
+  font-size: 63px;
+  font-weight: 600;
+}
+
+/* ----------------- Second Page ---------------- */
+.secondpage {
+  position: relative;
+  background-color: #1a1a1a;
+}
+.imacvideo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  margin: 0;
+}
+.imacpage {
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+  background-color: #1a1a1a;
+}
+.imaccontentandimage {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  height: 100vh;
+}
+.imaccontent,
+.imacimage {
+  flex: 1;
+}
+.imaccontent {
+  position: relative;
+}
+.imaccontents {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 100%;
+  transform: translate(-100%, -50%);
+}
+.imacimage {
+  position: relative;
+}
+.imacimage img {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 100%;
+  transform: translate(-100%, -50%);
+}
+.whiteh2 {
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: white;
+}
+.whiteh3 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: white;
+}
+.learnmorelinkwhite {
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  font-size: 20px;
+}
+.learnmore {
+  display: flex;
+  position: relative;
+  margin-top: 15px;
+  height: 50px;
+  vertical-align: middle;
+}
+.whitearrow {
+  position: absolute;
+  margin-left: 8px;
+  margin-top: 5px;
+}
+/* ----------------- Third Page ---------------- */
+.thirdpage {
+  height: 100vh;
+  overflow: hidden;
+}
+.macproimageandcontent {
+  display: flex;
+  position: relative;
+}
+.macproimageswrapper,
+.macprocontent {
+  flex: 1;
+}
+.macproimages {
+  position: relative;
+  margin-top: 50px;
+}
+#inside {
+  position: absolute;
+  z-index: 1;
+  width: 90%;
+  margin-top: 73px;
+}
+#outside {
+  position: absolute;
+  z-index: 3;
+  width: 90%;
+  margin-top: 70px;
+}
+#handles {
+  position: absolute;
+  z-index: 2;
+  width: 90%;
+}
+.macprocontent {
+  padding: 250px 0;
+  text-align: right;
+  margin: auto;
+  width: 50%;
+}
+.blackh2 {
+  font-size: 60px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: black;
+}
+.blackh3 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  color: black;
+}
+.learnmorelinkblack {
+  text-decoration: none;
+  color: black;
+  vertical-align: middle;
+  font-size: 20px;
+}
+.learnmoreblack {
+  display: flex-end;
+  position: relative;
+  margin-top: 15px;
+  margin-right: 22px;
+  vertical-align: middle;
+}
+.blackarrow {
+  position: absolute;
+  margin-left: 8px;
+  margin-top: 2px;
+}
+/* ----------------- Fourth Page ---------------- */
+.fourthpagefirstscroll {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.prodisplaytitle {
+  display: flex;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.prodisplaytitle h1 {
+  font-size: 60px;
+  margin-top: 40px;
+}
+.prodisplayscreenimage {
+  display: flex;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+}
+.prodisplayscreenimage img {
+  position: absolute;
+  width: 55%;
+  height: auto;
+}
+.fourthpagesecondscroll {
+  height: 100vh;
+  background-color: #f2f2f2;
+  transition: all 0.5s ease;
+}
+.fourthpagewrapper {
+  width: 85%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+}
+.xdrcontent,
+.xdrimage {
+  width: 50%;
+  position: relative;
+}
+.xdrimage img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+}
+.xdrcontents {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+}
+/* ----------------- Fifth Page ---------------- */
+.fifthpage {
+  background-color: black;
+  transition: all 0.5s ease;
+}
+.fifthpagefirstscroll {
+  height: 100vh;
+}
+.macbookprovideo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  margin: 0;
+}
+.fifthpagesecondscroll {
+  height: 100vh;
+  display: flex;
+  width: 85%;
+  margin: auto;
+  background-color: black;
+}
+.macbookprosideimage,
+.macbookprocontent {
+  width: 50%;
+  position: relative;
+}
+.macbookprosideimage img {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.macbookprocontents {
+  text-align: right;
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.learnmoreright {
+  display: flex;
+  position: relative;
+  margin-top: 15px;
+  height: 50px;
+  vertical-align: middle;
+}
+.whitearrowright {
+  position: absolute;
+  right: 0%;
+  top: 5%;
+}
+.learnmorelinkwhiteright {
+  text-decoration: none;
+  color: white;
+  right: 5%;
+  position: absolute;
+  font-size: 20px;
+}
+/* ----------------- Sixth Page ---------------- */
+.sixthpage {
+  background-color: black;
+}
+.sixthpagefirstscroll {
+  height: 100vh;
+  position: relative;
+}
+.iphonecameravideo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  margin: 0;
+}
+.sixthpagesecondscroll {
+  height: 100vh;
+  width: 85%;
+  margin: auto;
+  display: flex;
+  margin-top: 50px;
+}
+.iphonecontent {
+  width: 60%;
+  position: relative;
+}
+.iphonecontents {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.iphoneimage {
+  width: 40%;
+  position: relative;
+}
+.iphoneimage img {
+  position: absolute;
+  width: 55%;
+  top: 50%;
+  right: 0%;
+  transform: translateY(-50%);
+}
+/* ----------------- Seventh Page ---------------- */
+.seventhpage {
+  background-color: black;
+}
+.seventhpagefirstscroll {
+  height: 100vh;
+  position: relative;
+}
+.airpodsvideo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  margin: 0;
+}
+.seventhpagesecondscroll {
+  height: 100vh;
+  width: 85%;
+  margin: auto;
+  display: flex;
+}
+.airpodsimage {
+  width: 40%;
+  position: relative;
+}
+.airpodscontent {
+  width: 60%;
+  position: relative;
+}
+.airpodsimage img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+}
+.airpodscontents {
+  text-align: right;
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* ----------------- Eighth Page ---------------- */
+.eighthpagefirstscroll {
+  height: 100vh;
+  position: relative;
+}
+.ipadprovideo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  margin: 0;
+}
+.eighthpagecontent {
+  display: flex-inline;
+  text-align: center;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 2;
+  margin-top: -300px;
+}
+.ipadproimage {
+  display: flex;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+}
+.ipadproimage img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+.ipadlearnmore {
+  position: relative;
+  vertical-align: middle;
+  width: 90%;
+}
+.ipadlearnmore a {
+  position: absolute;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  margin-top: 5px;
+}
+.ipadlearnmore img {
+  position: absolute;
+  left: 59%;
+  margin-top: 8px;
+}
+.eighthpagethirdscroll {
+  height: 100vh;
+  position: relative;
+}
+.ipadprovideoend {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  margin: 0;
+}
+.thankyousection {
+  height: 100vh;
+  position: relative;
+}
+.thankyoucontent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.thankyousection h1 {
+  color: black;
+  font-size: 70px;
+  margin-bottom: 15px;
+}
+.thankyousection h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.thankyousection a {
+  font-size: 30px;
+  font-weight: 600;
+  color: black;
+}
