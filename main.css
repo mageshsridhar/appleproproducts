@@ -20,7 +20,9 @@ html {
 /* ----------------- First Page ---------------- */
 .firstpage {
   height: 100vh;
+  margin: auto;
   transition: all 0.5s ease;
+  overflow: hidden;
 }
 .pagewrapper {
   height: 100vh;
@@ -84,6 +86,7 @@ html {
 .secondpage {
   position: relative;
   background-color: #1a1a1a;
+  overflow: hidden;
 }
 .imacvideo {
   max-width: 100%;
@@ -290,6 +293,7 @@ html {
 .fifthpage {
   background-color: black;
   transition: all 0.5s ease;
+  overflow: hidden;
 }
 .fifthpagefirstscroll {
   height: 100vh;
@@ -347,6 +351,7 @@ html {
 /* ----------------- Sixth Page ---------------- */
 .sixthpage {
   background-color: black;
+  overflow: hidden;
 }
 .sixthpagefirstscroll {
   height: 100vh;
@@ -388,6 +393,7 @@ html {
 /* ----------------- Seventh Page ---------------- */
 .seventhpage {
   background-color: black;
+  overflow: hidden;
 }
 .seventhpagefirstscroll {
   height: 100vh;
@@ -431,6 +437,7 @@ html {
 .eighthpagefirstscroll {
   height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 .ipadprovideo {
   max-width: 100%;
